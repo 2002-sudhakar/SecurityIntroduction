@@ -1,0 +1,12 @@
+
+.jumbotron{
+  height: 100vh;
+}
+.div2,.div1 p, h1 , .key-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  margin-right: 20px;
+}
