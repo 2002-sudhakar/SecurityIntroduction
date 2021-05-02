@@ -10,22 +10,22 @@ app.get("/",function(req,res){
   res.render('home');
 });
 
-app.post("/",function(req,res){
-  res.send("yourform is submitted");
-});
 
 app.get('/login', function(req, res) {
     res.render('login');
     });
 
 app.post('/login',function(req,res){
-  res.send("succussfully logged");
+  res.render("secrets");
 });
 
     app.get('/signup', function(req, res) {
         res.render('signup');
         });
 
+    app.post('/signup',function(req,res){
+      res.render('secrets');
+    });
 app.listen(3000,function(){
   console.log("Port 3000 running succussfully.");
 });
